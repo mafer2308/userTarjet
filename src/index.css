@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
-body{
+body {
     background: #F1FAFF;
 }
 
-.container__cards{
+.container__cards {
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
@@ -20,40 +20,41 @@ body{
     justify-content: center;
 }
 
-.card{
+.card {
     width: 300px;
     margin: 10px;
     transition: all 300ms;
 }
 
-.card:hover{
+.card:hover {
     width: 350px;
 }
 
-.card .cover{
+.card .cover {
     width: 100%;
     height: 250px;
     position: relative;
     overflow: hidden;
 }
 
-.card .cover img{
+.card .cover img {
     width: 250px;
     display: block;
     margin: auto;
     position: relative;
     top: 40px;
     z-index: 1;
-    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
     transition: all 400ms;
+    border-radius: 20px;
 }
 
-.card:hover .cover img{
+.card:hover .cover img {
     top: 0px;
     filter: none;
 }
 
-.card .img__back{
+.card .img__back {
     width: 100%;
     height: 200px;
     position: absolute;
@@ -64,23 +65,25 @@ body{
     transition: all 300ms;
 }
 
-.card:nth-of-type(1) .img__back{
-    background-image: url(../images/bg1.jpg);
+/*imagenes con un path incorrecto*/
+
+.card:nth-of-type(1) .img__back {
+    background-image: url(../images/fondo1.jpg);
 }
 
-.card:nth-of-type(2) .img__back{
-    background-image: url(../images/bg2.jpg);
+.card:nth-of-type(2) .img__back {
+    background-image: url(../images/fondo2.jpg);
 }
 
-.card:nth-of-type(3) .img__back{
-    background-image: url(../images/bg3.jpg);
+.card:nth-of-type(3) .img__back {
+    background-image: url(../images/fondo3.jpg);
 }
 
-.card:hover .img__back{
+.card:hover .img__back {
     bottom: -40px;
 }
 
-.card .description{
+.card .description {
     background: white;
     margin-top: -10px;
     padding: 20px;
@@ -88,19 +91,19 @@ body{
     transition: all 300ms;
 }
 
-.card:hover .description{
+.card:hover .description {
     padding: 40px;
 }
 
-.card .description h2{
+.card .description h2 {
     margin-top: 10px;
 }
 
-.card .description p{
+.card .description p {
     margin-top: 10px;
 }
 
-.card .description input{
+.card .description input {
     padding: 10px 40px;
     margin-top: 20px;
     border: none;
@@ -112,6 +115,6 @@ body{
     transition: all 300ms;
 }
 
-.card .description input:hover{
+.card .description input:hover {
     background: #83277b;
 }
