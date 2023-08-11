@@ -11,12 +11,13 @@ const Cards = () => {
 
   console.log(users);
   return (
-    <div className="container__card">
+    <div className="container__cards">
       <div className="card">
         <div className="cover">
           <img src={users[index].picture} alt="" />
-          <div className="img_back"></div>
-          <div className="description">
+          <div className="img__back"></div>
+        </div>
+        <div className="description">
             <h3> {users[index].name}</h3>
             <p>{users[index].email}</p>
             <p>
@@ -28,7 +29,6 @@ const Cards = () => {
             <button onClick={onChange}>Next</button>
             <input type="button" value="Leer mas" />
           </div>
-        </div>
       </div>
     </div>
   );
